@@ -14,6 +14,9 @@ import { LOCALE_ID} from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/fr';
 import localeFrExtra from '@angular/common/locales/extra/fr';
+import { SwitchComponent } from './switch/switch.component';
+import { TablepipePipe } from './tablepipe.pipe';
+import { DesktoppageComponent } from './desktoppage/desktoppage.component';
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import localeFrExtra from '@angular/common/locales/extra/fr';
     Test02Component,
     HeaderComponent,
     FooterComponent,
-    HeightDecoratorDirective
+    HeightDecoratorDirective,
+    SwitchComponent,
+    TablepipePipe,
+    DesktoppageComponent
   ],
   imports: [
     BrowserModule,

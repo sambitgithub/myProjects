@@ -5,15 +5,14 @@ import { Observable } from 'rxjs/Rx'
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import {Router} from "@angular/router";
 
-
 @Component({
-  selector: 'app-test01',
-  templateUrl: './test01.component.html',
-  styleUrls: ['./test01.component.scss']
+  selector: 'app-desktoppage',
+  templateUrl: './desktoppage.component.html',
+  styleUrls: ['./desktoppage.component.css']
 })
-export class Test01Component implements OnInit {
+export class DesktoppageComponent implements OnInit {
 
-	data=[];
+  data=[];
      constructor(private tdDataService:TddataService,private router: Router) {
 		this.tdDataService.getTdData().subscribe(res => this.data = res);
     }

@@ -5,15 +5,14 @@
 <div class="container">
   
   <table class="table table-hover text-centered" border="2">
-		<tr  *ngFor="let entry of data| tablepipe:2">
-			<td class="text-center" *ngFor="let data of entry">
-				<input type=button class="btn btn-primary;"  heightDecorator value="{{data.text}}" (click)="onClick()"/>
+		<tr  *ngFor="let entry of data">
+			<td class="text-center">
+				<input type=button class="btn btn-primary;"  heightDecorator value="{{entry.text}}" (click)="onClick()"/>
 			</td>
 		</tr>
 		
   </table>
   </div>
-  <h5 class="text-center"><a target="_blank" routerLink="/desktoppage">Mobile Layout</a></h5>
 <app-footer></app-footer>
 </body>
 </html>
